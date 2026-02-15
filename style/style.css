@@ -1,0 +1,156 @@
+/* RESET BÁSICO */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* CORPO */
+body{
+    background-color: #f3efe6;
+    color: #2c2c2c;
+    font-family: 'Lora', serif;
+    line-height: 1.9;
+    font-size: 18px;
+}
+
+/* CABEÇALHO */
+header {
+    text-align: center;
+    padding: 4rem 1rem 2rem;
+    border-bottom: 1px solid #d8d2c5;
+}
+
+header h1 {
+    font-family: 'Playfair Display', serif;
+    font-size: 2.8rem;
+    font-weight: 700;
+    letter-spacing: 1px;
+    text-shadow: 2px 5px 4px  rgba(0, 0, 0, 0.212); 
+}
+
+/* CONTEÚDO PRINCIPAL */
+
+main {
+    background-color: #ffffff;
+    margin: 60px auto;
+    padding: 50px 40px;
+    max-width: 900px;
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.08);
+    border-radius: 8px;
+}
+
+/* NAVEGAÇÃO */
+
+nav {
+    text-align: center;
+    padding: 1.5rem 0;
+    
+}
+
+nav > a {
+    text-decoration: none;
+    color: #5a5245;
+    margin: 0 20px;
+    font-size: 0.95rem;
+    font-weight: 600;
+    transition: 0.3s ease;
+    border-bottom: 1px solid #d8d2c5;
+}
+
+nav a:hover {
+    color: #8b6f47;
+    border-bottom: 5px solid #d8d2c5;
+    transition: 0.3s ease-in;
+
+}
+
+/* ARTIGOS */
+
+.post {
+    margin-bottom: 100px;
+}
+
+.post h2 {
+    font-family: 'Playfair Display', serif;
+    font-size: 2rem;
+    margin-bottom: 10px;
+    text-align: center;
+    
+}
+.autor {
+    font-size: 0.9rem;
+    color: #7a7265;
+    margin-bottom: 30px;
+    font-style: italic;
+    text-align: center;
+}
+
+/* POEMA */
+
+.poema {
+    white-space: pre-line;
+    font-size: 1.2rem;
+    line-height: 2.1;
+    text-align: center;
+}
+
+/* IMAGEM ENTRE POEMAS */
+
+.imagem-central {
+    text-align: center;
+    margin: 80px 0;
+}
+
+.imagem-central img {
+    width: 100%;
+    max-width: 800px;
+    height: auto;
+    border-radius: 10px;
+    filter: sepia(15%);
+    transition: 0.4s ease;
+}
+
+.imagem-central img:hover {
+    filter: sepia(0%);
+}
+
+/* RODAPÉ */
+
+footer {
+    text-align: center;
+    padding: 3rem 1rem;
+    border-top: 1px solid #d8d2c5;
+    font-size: 0.85rem;
+    color: #7a7265;
+    font-weight: 700;
+}
+
+/* RESPONSIVIDADE */
+
+@media (max-width: 768px) {
+
+    header h1 {
+        font-size: 2rem;
+    }
+
+    .post h2 {
+        font-size: 1.5rem;
+    }
+
+    .poema {
+        font-size: 1rem;
+        line-height: 1.8;
+    }
+
+    nav a {
+        margin: 0 8px;
+        font-size: 0.9rem;
+    }
+
+    .imagem-central img {
+        width: 100%;
+        max-width: 100%;
+    }
+
+}
